@@ -1,7 +1,7 @@
 const path = require('path')
 const exec = require('child_process').exec
 
-// Example cli object
+// cli object
 // {
 //   "code": 0,
 //   "error": null,

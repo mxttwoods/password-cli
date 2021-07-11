@@ -2,6 +2,7 @@ const alpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 const numbers = '0123456789'
 const symbols = '!@#$%^&*_-+='
 
+// determine what opts to use
 const createPassword = (length = 8, hasNumbers = true, hasSymbols = true) => {
   let chars = alpha
   hasNumbers ? (chars += numbers) : ''
@@ -9,6 +10,7 @@ const createPassword = (length = 8, hasNumbers = true, hasSymbols = true) => {
   return generatePassword(length, chars)
 }
 
+// create password string
 const generatePassword = (length, chars) => {
   let password = ''
   for (let i = 0; i < length; i++) {
