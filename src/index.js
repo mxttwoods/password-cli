@@ -20,17 +20,17 @@ program
 // capture opts
 const { length, save, numbers, symbols } = program.opts()
 
-// Get generated password
+// get generated password
 const generatedPassword = createPassword(length, numbers, symbols)
 
-// Save to file
+// save to file
 if (save) {
   savePassword(generatedPassword)
 }
 
-// Copy to clipboard
+// copy to clipboard
 clipboardy.writeSync(generatedPassword)
 
-// Output generated password
+// output generated password
 console.log(chalk.blue('Generated Password: ') + chalk.bold(generatedPassword))
 console.log(chalk.yellow('Password copied to clipboard'))
