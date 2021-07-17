@@ -30,7 +30,7 @@ Options:
   -h, --help             display help for command
 ```
 
-To create a symlink to run "password-cli" from anywhere
+To create a symlink to run `password-cli` from anywhere
 
 ```bash
 npm link
