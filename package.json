@@ -16,6 +16,6 @@
     "commander": "8.3.0"
   },
   "devDependencies": {
-    "jest": "27.4.0"
+    "jest": "27.4.1"
   }
 }
